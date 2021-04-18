@@ -1,4 +1,4 @@
-# Project Management System for engineering firm v.1
+# Project Management System for engineering firm
 
 ## About
 
