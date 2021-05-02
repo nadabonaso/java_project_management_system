@@ -4,7 +4,9 @@ import java.time.LocalDate;
 /**
  * This is the project class which holds all the information
  * to create a new project object.
+ * 
  */
+
 public class Project {
 	// Instance variables used to create a new project.
 	private static String companyName;
@@ -23,14 +25,13 @@ public class Project {
 	private Person customer;
 	private Person contractor;
 	private Person architect;
-	private static int id = 1001;
+	private static int id = 1000;
 	private static int counter = 100;
 	public int choice;
 	public LocalDate todayD = LocalDate.now();
 	public NumberFormat fmt = NumberFormat.getCurrencyInstance();
 
 	// Getters and Setters
-
 	public static String getProjId() {
 		return projId;
 	}
@@ -88,7 +89,7 @@ public class Project {
 	// Add project details
 	public Project(String projName, String structType, String structAddress, String erfNum, String dueD,
 			String projStatus, double invTotal, Person customer, Person contractor, Person architect) {
-		Project.companyName = "Poised";
+		companyName = "Poised";
 		this.projName = projName;
 		this.structType = structType;
 		this.structAddress = structAddress;
@@ -154,7 +155,7 @@ public class Project {
 
 	// toString displays the Project summary
 	public String toString() {
-		String output = "Project ID: " + projId;
+		String output = "\nProject ID: " + projId;
 		output += "\nProject Name: " + projName;
 		output += "\nProject status: " + projStatus;
 		output += "\n";

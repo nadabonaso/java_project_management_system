@@ -76,6 +76,7 @@ public class Person {
 
 		System.out.print("Address: ");
 		address = input.nextLine();
+	
 	}
 
 	// toString displays the Person object data
