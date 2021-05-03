@@ -27,7 +27,6 @@ public class Project {
 	private Person architect;
 	private static int id = 1000;
 	private static int counter = 100;
-	public int choice;
 	public LocalDate todayD = LocalDate.now();
 	public NumberFormat fmt = NumberFormat.getCurrencyInstance();
 
@@ -36,6 +35,14 @@ public class Project {
 		return projId;
 	}
 	
+	public void setProjId(String projId) {
+		Project.projId = projId;
+	}
+	
+	public String getProjName() {
+		return projName;
+	}
+
 	public String getStructType() {
 		return structType;
 	}
@@ -47,6 +54,18 @@ public class Project {
 	public void setDueD(String dueD) {
 		this.dueD = dueD;
 	}
+	
+	public String getProjStatus() {
+		return projStatus;
+	}
+	
+	public void setProjStatus(String projStatus) {
+		this.projStatus = projStatus;
+	}
+	
+	public void setFinalised(boolean finalised) {
+		this.finalised = finalised;
+	}
 
 	public double getInvTotal() {
 		return invTotal;
@@ -55,31 +74,35 @@ public class Project {
 	public double getInvBalance() {
 		return invBalance;
 	}
+	
+	public void setProjName(String projName) {
+		this.projName = projName;
+	}
 
 	public Person getCustomer() {
 		return customer;
+	}
+	
+	public void setCustomer(Person customer) {
+		this.customer = customer;
 	}
 
 	public Person getContractor() {
 		return contractor;
 	}
+	
+	public void setContractor(Person contractor) {
+		this.contractor = contractor;
+	}
 
 	public Person getArchitect() {
 		return architect;
 	}
-
-	public void setFinalised(boolean finalised) {
-		this.finalised = finalised;
-	}
-
-	public String getProjStatus() {
-		return projStatus;
-	}
-
-	public void setProjStatus(String projStatus) {
-		this.projStatus = projStatus;
-	}
 	
+	public void setArchitect(Person architect) {
+		this.architect = architect;
+	}
+
 
 	// default constructor
 	public Project() {

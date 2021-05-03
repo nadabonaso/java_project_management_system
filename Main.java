@@ -107,7 +107,7 @@ public class Main {
 						double userInputDbl = input.nextDouble();
 						double payment = userInputDbl;
 						newProject.invPayment(payment);
-						System.out.println("New Balance: " + newProject.fmt.format(newProject.getInvBalance()));
+						System.out.println("\nNew Balance: " + newProject.fmt.format(newProject.getInvBalance()));
 					}
 					
 					break;
@@ -128,7 +128,7 @@ public class Main {
 						System.out.print("\nEnter new date (YYYY-MM-DD): ");
 						String dueD = input.nextLine();
 						newProject.setDueD(dueD);
-						System.out.print("\nSuccessfully updated to " + dueD + "\n");
+						System.out.print("\nNew Due Date: " + dueD + "\n");
 					}
 					
 					break;

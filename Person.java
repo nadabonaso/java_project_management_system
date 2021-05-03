@@ -4,6 +4,7 @@ import java.util.Scanner;
  * This is the person class which holds all the information
  * to create a new person object.
  */
+
 public class Person {
 	// Instance variables used for creating a new person.
 	private String firstName;
